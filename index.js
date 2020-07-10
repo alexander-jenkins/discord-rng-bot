@@ -42,6 +42,10 @@ bot.on('message', msg => {
             bot.cmds.get('num').execute(msg, args)
             break
         }
+        case 'help' : {
+            bot.cmds.get('help').execute(msg)
+            break
+        }
     }
 })
 
