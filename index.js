@@ -47,6 +47,6 @@ bot.on('message', msg => {
 
 // This is where the bot authenticates with Discord servers using its auth token
 bot.on('ready', () => {
-    console.log('Connected')
+    console.log('Connected as user ' + bot.user.tag)
 })
 bot.login(config.TOKEN) 

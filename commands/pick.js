@@ -4,6 +4,6 @@ module.exports = {
     execute(msg, args) {
         var pickCeil = args.length
         var choice = (Math.floor(Math.random() * pickCeil))
-        msg.channel.send("I have chosen " + args[choice])
+        msg.reply("I have chosen " + args[choice])
     }
 }
